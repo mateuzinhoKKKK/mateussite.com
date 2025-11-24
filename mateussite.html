@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Pessoal - Trabalho Escolar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1e90ff; /* azul */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 200px);
+            grid-gap: 20px;
+        }
+
+        .link-box {
+            background: #ffffff; /* fundo branco */
+            color: #000000; /* fonte preta */
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .link-box:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="link-box" href="https://www.google.com" target="_blank">Google</a>
+        <a class="link-box" href="https://chat.openai.com" target="_blank">ChatGPT</a>
+        <a class="link-box" href="https://www.youtube.com" target="_blank">YouTube</a>
+        <a class="link-box" href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a class="link-box" href="#">Em Breve</a>
+    </div>
+</body>
+</html>
