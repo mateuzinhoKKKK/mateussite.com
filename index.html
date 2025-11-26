@@ -48,16 +48,22 @@
     }
 
     /* 🕒 RELÓGIO CENTRAL ANIMADO */
-    #clock {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 90px;
-        font-weight: bold;
-        text-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff;
-        animation: pulse 2s infinite ease-in-out;
+#clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 90px;
+    font-weight: bold;
+
+    /* sombra preta */
+    text-shadow: 0 0 6px black, 0 0 12px black;
+
+    /* animação */
+    animation: pulse 2s infinite ease-in-out;
+}
+
     }
 
     @keyframes pulse {
