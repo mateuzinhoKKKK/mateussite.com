@@ -16,14 +16,20 @@
         width: 100vw;
         overflow: hidden;
         font-family: Arial, sans-serif;
-
-        /* 🎥 FUNDO ANIMADO */
-        background: url("https://giffiles.alphacoders.com/219/219726.gif") 
-        no-repeat center center fixed;
-        background-size: cover;
     }
 
-    /* 📸 FOTO DO CANTO */
+    /* 🎥 VÍDEO DE FUNDO */
+    #bg-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    /* FOTO DO CANTO */
     .foto-canto {
         position: absolute;
         top: 20px;
@@ -36,7 +42,7 @@
         box-shadow: 0 0 15px white;
     }
 
-    /* ✨ FRASE ABAIXO DA FOTO */
+    /* FRASE */
     .frase {
         position: absolute;
         top: 165px;
@@ -47,23 +53,17 @@
         text-shadow: 0 0 4px black;
     }
 
-    /* 🕒 RELÓGIO CENTRAL ANIMADO */
-#clock {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 90px;
-    font-weight: bold;
-
-    /* sombra preta */
-    text-shadow: 0 0 6px black, 0 0 12px black;
-
-    /* animação */
-    animation: pulse 2s infinite ease-in-out;
-}
-
+    /* 🕒 RELÓGIO CENTRAL */
+    #clock {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 90px;
+        font-weight: bold;
+        text-shadow: 0 0 6px black, 0 0 12px black;
+        animation: pulse 2s infinite ease-in-out;
     }
 
     @keyframes pulse {
@@ -72,7 +72,7 @@
         100% { transform: translate(-50%, -50%) scale(1); }
     }
 
-    /* 🔗 ÍCONES INFERIORES */
+    /* ÍCONES DO RODAPÉ */
     .icons {
         position: absolute;
         bottom: 20px;
@@ -101,6 +101,11 @@
 
 <body>
 
+    <!-- 🎥 VIDEO DE FUNDO -->
+    <video autoplay loop muted id="bg-video">
+        <source src="pinterestdownloader.com.br-567108.mp4" type="video/mp4">
+    </video>
+
     <!-- FOTO -->
     <img src="https://pbs.twimg.com/profile_images/1601292494767005701/U4H4y3qs_400x400.jpg" class="foto-canto">
 
@@ -110,11 +115,11 @@
     <!-- RELÓGIO -->
     <div id="clock">00:00:00</div>
 
-    <!-- ÍCONES DO RODAPÉ -->
+    <!-- ICONES -->
     <div class="icons">
 
-        <a href="https://google.com" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png">
+        <a href="https://open.spotify.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111624.png">
         </a>
 
         <a href="https://youtube.com" target="_blank">
