@@ -18,8 +18,8 @@
         font-family: Arial, sans-serif;
     }
 
-    /* 🎥 VÍDEO DE FUNDO */
-    #bg-video {
+    /* 🎥 FUNDO EM VÍDEO */
+    #video-bg {
         position: fixed;
         top: 0;
         left: 0;
@@ -29,7 +29,7 @@
         z-index: -1;
     }
 
-    /* FOTO DO CANTO */
+    /* 📸 FOTO DO CANTO SUPERIOR ESQUERDO */
     .foto-canto {
         position: absolute;
         top: 20px;
@@ -39,10 +39,10 @@
         border-radius: 50%;
         border: 3px solid white;
         object-fit: cover;
-        box-shadow: 0 0 15px white;
+        box-shadow: 0 0 15px black;
     }
 
-    /* FRASE */
+    /* ✨ FRASE ABAIXO DA FOTO */
     .frase {
         position: absolute;
         top: 165px;
@@ -50,10 +50,10 @@
         font-size: 28px;
         font-weight: bold;
         color: white;
-        text-shadow: 0 0 4px black;
+        text-shadow: 0 0 6px black;
     }
 
-    /* 🕒 RELÓGIO CENTRAL */
+    /* 🕒 RELÓGIO ANIMADO NO CENTRO */
     #clock {
         position: absolute;
         top: 50%;
@@ -72,7 +72,7 @@
         100% { transform: translate(-50%, -50%) scale(1); }
     }
 
-    /* ÍCONES DO RODAPÉ */
+    /* 🔗 ÍCONES INFERIORES */
     .icons {
         position: absolute;
         bottom: 20px;
@@ -101,9 +101,9 @@
 
 <body>
 
-    <!-- 🎥 VIDEO DE FUNDO -->
-    <video autoplay loop muted id="bg-video">
-        <source src="pinterestdownloader.com.br-567108.mp4" type="video/mp4">
+    <!-- 🎥 VÍDEO DE FUNDO -->
+    <video id="video-bg" autoplay loop muted>
+        <source src="https://github.com/mateuzinhoKKKK/mateussite.com/raw/refs/heads/main/pinterestdownloader.com.br_567108.mp4" type="video/mp4">
     </video>
 
     <!-- FOTO -->
@@ -115,11 +115,11 @@
     <!-- RELÓGIO -->
     <div id="clock">00:00:00</div>
 
-    <!-- ICONES -->
+    <!-- ÍCONES DO RODAPÉ -->
     <div class="icons">
 
         <a href="https://open.spotify.com" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111624.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png">
         </a>
 
         <a href="https://youtube.com" target="_blank">
